@@ -13,7 +13,6 @@ typeattribute qti_init_shell data_between_core_and_vendor_violators;
 # Required for FM
 allow qti_init_shell self:socket create;
 
-<<<<<<< HEAD
 allow qti_init_shell bluetooth_data_file:file r_file_perms;
 allow qti_init_shell ctl_default_prop:property_service set;
 allow qti_init_shell ctl_start_prop:property_service set;
@@ -37,8 +36,6 @@ allow qti_init_shell proc_page_cluster:file { write };
 
 # Allow adjust page_cluster setting
 allow qti_init_shell proc_page_cluster:file { open write };
-=======
-allow qti_init_shell { sysfs sysfs_dm }:file write;
 
 # XiaomiParts
 allow qti_init_shell kcal_dev:dir search;
@@ -51,4 +48,3 @@ allow qti_init_shell sysfs_vibrator:dir search;
 allow qti_init_shell sysfs_vibrator:file rw_file_perms;
 allow qti_init_shell sysfs_fpsinfo:dir search;
 allow qti_init_shell sysfs_fpsinfo:file rw_file_perms;
->>>>>>> 905fa9e... vince: Import XiaomiParts v3.0

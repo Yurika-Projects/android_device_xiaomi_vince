@@ -8,12 +8,10 @@ allow system_app {
 # zram
 r_dir_file(system_app sysfs_zram)
 
-<<<<<<< HEAD
 binder_call(system_app, wificond)
 
 allow system_app hal_power_default:binder { call };
 
-=======
 # XiaomiParts
 allow system_app kcal_dev:dir search;
 allow system_app kcal_dev:file rw_file_perms;
@@ -27,4 +25,3 @@ allow system_app sysfs_fps:file rw_file_perms;
 
 # Touchboost
 allow system_app sysfs_touchboost:file { open read getattr write };
->>>>>>> 905fa9e... vince: Import XiaomiParts v3.0

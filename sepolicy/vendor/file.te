@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-=======
 type kcal_dev, sysfs_type, fs_type;
 type sysfs_fpsinfo, sysfs_type, fs_type;
 type sysfs_fastcharge, sysfs_type, fs_type;
 type sysfs_headgain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
 
-# Batteryd
-type batteryd, domain;
-
-# Batterysecret
-type batterysecret, domain;
-
->>>>>>> 905fa9e... vince: Import XiaomiParts v3.0
 # Camera
 type camera_socket, file_type, data_file_type;
 
@@ -48,17 +39,12 @@ type persist_sensors_file, file_type, vendor_persist_type;
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
 
-<<<<<<< HEAD
 # XiaomiParts
 type sysfs_hgain, sysfs_type, fs_type;
 type sysfs_mgain, sysfs_type, fs_type;
 type sysfs_sgain, sysfs_type, fs_type;
 
 type sysfs_battery_saver, fs_type, sysfs_type;
-=======
-# Touchscreen wake_gesture
-type sysfs_tap_to_wake, sysfs_type, fs_type;
 
 # Touchboost
 type sysfs_touchboost, sysfs_type, fs_type;
->>>>>>> 905fa9e... vince: Import XiaomiParts v3.0
