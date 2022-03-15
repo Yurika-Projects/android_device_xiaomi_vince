@@ -347,7 +347,7 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    OpenBoard
+    FlorisBoard
 
 # Public libraries
 PRODUCT_COPY_FILES += \
