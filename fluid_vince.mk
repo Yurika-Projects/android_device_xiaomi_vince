@@ -32,7 +32,7 @@ $(call inherit-product, vendor/exthm/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := exthm_vince
+PRODUCT_NAME := fluid_vince
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
