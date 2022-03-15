@@ -28,11 +28,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common exTHmUI stuff.
-$(call inherit-product, vendor/nad/config/common.mk)
+$(call inherit-product, vendor/exthm/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := exthmui_vince
+PRODUCT_NAME := exthm_vince
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
