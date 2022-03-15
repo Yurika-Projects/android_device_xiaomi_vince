@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/exthm_vince.mk
+    $(LOCAL_DIR)/fluid_vince.mk
 
 COMMON_LUNCH_CHOICES := \
     fluid_vince-user \
