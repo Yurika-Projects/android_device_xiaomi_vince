@@ -1,1 +1,1 @@
-PRODUCT_PACKAGES += OpenBoard
+PRODUCT_PACKAGES += FlorisBoard
