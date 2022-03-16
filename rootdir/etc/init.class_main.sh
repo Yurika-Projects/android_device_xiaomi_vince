@@ -61,12 +61,12 @@ case "$baseband" in
 
         multisim=`getprop persist.radio.multisim.config`
 
-        if [ "$multisim" = "dsds" ] || [ "$multisim" = "dsda" ]; then
-            start vendor.ril-daemon2
-        elif [ "$multisim" = "tsts" ]; then
-            start vendor.ril-daemon2
-            start vendor.ril-daemon3
-        fi
+    if [ "$multisim" = "dsds" ] || [ "$multisim" = "dsda" ]; then
+        start vendor.qcrild2
+    elif [ "$multisim" = "tsts" ]; then
+        start vendor.qcrild2
+        start vendor.qcrild3
+    fi
 
         case "$datamode" in
             "tethered")
