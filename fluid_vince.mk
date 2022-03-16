@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 The FluidOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,8 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common exTHmUI stuff.
-$(call inherit-product, vendor/fluid/config/common.mk)
+# Inherit some common Fluid stuff.
+$(call inherit-product, device/xiaomi/vince/fluid-config.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
