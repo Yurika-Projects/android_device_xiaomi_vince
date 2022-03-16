@@ -39,12 +39,13 @@ case "$baseband" in
     "apq" | "sda" | "qcs" )
         setprop ro.vendor.radio.noril yes
         stop vendor.ril-daemon
+        stop vendor.qcrild
 esac
 
 case "$baseband" in
     "msm" | "csfb" | "svlte2a" | "mdm" | "mdm2" | "sglte" | "sglte2" | "dsda2" | "unknown" | "dsda3" | "sdm" | "sdx" | "sm6")
 
-        start vendor.ril-daemon
+        start vendor.qcrild
 
         case "$baseband" in
             "svlte2a" | "csfb")
