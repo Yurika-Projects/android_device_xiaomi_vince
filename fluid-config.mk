@@ -2,7 +2,7 @@
 
 # Gapps flags
 
-TARGET_INCLUDE_GAPPS := true
+TARGET_INCLUDE_GAPPS := false
 
 TARGET_GAPPS_ARCH := arm64
 
